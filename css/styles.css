@@ -1,0 +1,110 @@
+/* Allmän styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* === MENY === */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    background-color: #6c4f3d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #8c6954;
+}
+
+/* === STARTSIDAN === */
+header {
+    background: url(../images/windshield.jpeg) no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+    background-color: white;
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === PRODUKTLISTA === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Lucida Sans Unicode", sans-serif;
+    color: #4d2600;
+}
+
+table, th, td {
+    border: 2px solid green;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* === MEDIA-SIDAN === */
+.media-container {
+    background: url('../images/windshield.jpeg') no-repeat center center/cover;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.video-section {
+    margin-bottom: 20px;
+}
+
+/* === FORMULÄR === */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #6c4f3d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+input[type="submit"]:hover {
+    background-color: #8c6954;
+}

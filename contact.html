@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt - Skrot och Korn AB</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -14,74 +15,67 @@
         <a href="media.html">Media</a>
     </nav>
 
-    <hr>
+    <div class="container">
+        <h1>Kontakta oss</h1>
 
-    <h1>Kontakta oss</h1>
+        <div class="contact-list">
+            <h2>Vår personal</h2>
+            <ul>
+                <li>
+                    <img src="images/nils.png" alt="Nisse Nilsson" width="100">
+                    <p>Nisse Nilsson - <a href="mailto:nisse@skrotkorn.se">nisse@skrotkorn.se</a></p>
+                </li>
+                <li>
+                    <img src="images/lisa.png" alt="Lisa Larsson" width="100">
+                    <p>Lisa Larsson - <a href="mailto:lisa@skrotkorn.se">lisa@skrotkorn.se</a></p>
+                </li>
+                <li>
+                    <img src="images/kalle.png" alt="Kalle Karlsson" width="100">
+                    <p>Kalle Karlsson - <a href="mailto:kalle@skrotkorn.se">kalle@skrotkorn.se</a></p>
+                </li>
+            </ul>
+        </div>
 
-    <ul>
-        <li>
-            <img src="images/nils.png" alt="Nisse Nilsson" width="100">
-            <p>Nisse Nilsson - <a href="mailto:nisse@skrotkorn.se">nisse@skrotkorn.se</a></p>
-        </li>
-        <li>
-            <img src="images/lisa.png" alt="Lisa Larsson" width="100">
-            <p>Lisa Larsson - <a href="mailto:lisa@skrotkorn.se">lisa@skrotkorn.se</a></p>
-        </li>
-        <li>
-            <img src="images/kalle.png" alt="Kalle Karlsson" width="200">
-            <p>Kalle Karlsson - <a href="mailto:kalle@skrotkorn.se">kalle@skrotkorn.se</a></p>
-        </li>
-    </ul>
+        <h2>Skicka ett meddelande</h2>
+        <form action="mailto:kontakt@skrotkorn.se" method="post" enctype="text/plain">
+            <label for="namn">Namn:</label>
+            <input type="text" id="namn" name="namn" required><br>
 
-    <hr>
+            <label for="adress">Adress:</label>
+            <input type="text" id="adress" name="adress"><br>
 
-    
-    <h2>Skicka ett meddelande</h2>
-    <form action="mailto:kontakt@skrotkorn.se" method="post" enctype="text/plain">
-        <label for="namn">Namn:</label>
-        <input type="text" id="namn" name="namn" required><br><br>
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required><br>
 
-        <label for="adress">Adress:</label>
-        <input type="text" id="adress" name="adress"><br><br>
+            <label for="telefon">Telefonnummer:</label>
+            <input type="tel" id="telefon" name="telefon"><br>
 
-        <label for="email">E-post:</label>
-        <input type="email" id="email" name="email" required><br><br>
+            <p>Är du privatperson eller företag?</p>
+            <input type="radio" id="privat" name="kundtyp" value="privat" required>
+            <label for="privat">Privat</label>
+            <input type="radio" id="foretag" name="kundtyp" value="företag">
+            <label for="foretag">Företag</label><br>
 
-        <label for="telefon">Telefonnummer:</label>
-        <input type="tel" id="telefon" name="telefon"><br><br>
+            <p>Storlek på företaget:</p>
+            <input type="radio" id="små" name="storlek" value="1-100">
+            <label for="små">1-100 anställda</label><br>
+            <input type="radio" id="medel" name="storlek" value="101-1000">
+            <label for="medel">101-1000 anställda</label><br>
+            <input type="radio" id="stor" name="storlek" value="1000+">
+            <label for="stor">Mer än 1000 anställda</label><br>
 
-        
-        <p>Är du privatperson eller företag?</p>
-        <input type="radio" id="privat" name="kundtyp" value="privat" required>
-        <label for="privat">Privat</label>
-        <input type="radio" id="foretag" name="kundtyp" value="företag">
-        <label for="foretag">Företag</label><br><br>
+            <label for="fraga">Din fråga:</label>
+            <textarea id="fraga" name="fraga" rows="5"></textarea><br>
 
-        
-        <p>Storlek på företaget:</p>
-        <input type="radio" id="små" name="storlek" value="1-100">
-        <label for="små">1-100 anställda</label><br>
+            <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev">
+            <label for="nyhetsbrev">Prenumerera på nyhetsbrevet</label><br>
 
-        <input type="radio" id="medel" name="storlek" value="101-1000">
-        <label for="medel">101-1000 anställda</label><br>
+            <input type="checkbox" id="kontaktTelefon" name="kontaktTelefon">
+            <label for="kontaktTelefon">Jag vill bli kontaktad på telefon</label><br>
 
-        <input type="radio" id="stor" name="storlek" value="1000+">
-        <label for="stor">Mer än 1000 anställda</label><br><br>
-
-        
-        <label for="fraga">Din fråga:</label><br>
-        <textarea id="fraga" name="fraga" rows="5" cols="40"></textarea><br><br>
-
-        
-        <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="ja">
-        <label for="nyhetsbrev">Jag vill prenumerera på nyhetsbrevet</label><br>
-
-        <input type="checkbox" id="kontaktTelefon" name="kontaktTelefon" value="ja">
-        <label for="kontaktTelefon">Jag vill bli kontaktad på telefon</label><br><br>
-
-       
-        <input type="submit" value="Skicka">
-    </form>
+            <input type="submit" value="Skicka">
+        </form>
+    </div>
 
 </body>
 </html>

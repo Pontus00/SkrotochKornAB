@@ -8,6 +8,15 @@
 </head>
 <body>
 
+<div class="container">
+    <header>
+        <h1>Skrot och Korn AB</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Sök...">
+            <button>Sök</button>
+        </div>
+    </header>
+
     <nav>
         <a href="index.html">Startsida</a> |
         <a href="product.html">Produkter</a> |
@@ -15,10 +24,10 @@
         <a href="media.html">Media</a>
     </nav>
 
-    <div class="media-container">
+    <main>
         <h1>Media</h1>
 
-        <div class="video-section">
+        <div class="video-container">
             <h2>Vår egen video</h2>
             <video controls>
                 <source src="egen-video.mp4" type="video/mp4">
@@ -26,16 +35,21 @@
             </video>
         </div>
 
-        <div class="video-section">
+        <div class="video-container">
             <h2>Hur kraftfulla bulldozers fungerar</h2>
             <iframe src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID" allowfullscreen></iframe>
         </div>
+    </main>
 
-        <div class="contact-section">
-            <h2>Kontaktinformation</h2>
-            <iframe src="contact.html"></iframe>
-        </div>
-    </div>
+    <aside>
+        <h3>Vår kontaktinformation</h3>
+        <iframe src="contact.html" class="kontakt-iframe"></iframe>
+    </aside>
+
+    <footer>
+        <p>© 2024 Skrot och Korn AB. Alla rättigheter förbehållna.</p>
+    </footer>
+</div>
 
 </body>
 </html>

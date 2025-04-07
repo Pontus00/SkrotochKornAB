@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    
 
 <div class="container">
     <header>
@@ -17,52 +18,57 @@
         </div>
     </header>
 
-    <nav>
-        <a href="index.html">Startsida</a> |
-        <a href="product.html">Produkter</a> |
-        <a href="contact.html">Kontakta oss</a> |
-        <a href="media.html">Media</a>
-    </nav>
+    <nav id="main-menu"></nav>
 
     <main>
         <h1>Våra produkter</h1>
 
-        <div class="product-grid">
-            <div class="product">
-                <img src="images/excavator.jpg" alt="Grävskopa">
-                <h3>Grävskopa</h3>
-                <p>Effekt: <strong>200 hk</strong> | Lastvikt: <strong>2 ton</strong></p>
-                <p class="price">Pris: <strong>100 000 kr</strong> (exkl. moms)</p>
-                <p class="price">Pris: <strong>125 000 kr</strong> (inkl. moms)</p>
-            </div>
+        <div class="product">
+            <img src="images/excavator.jpg" alt="Grävskopa">
+            <h3>Grävskopa</h3>
+            <p>Effekt: <strong>200 hk</strong> | Lastvikt: <strong>2 ton</strong></p>
+            <label>
+                <input type="checkbox" class="produkt-check" data-pris="125000">
+                Välj denna produkt (125 000 kr inkl. moms)
+            </label>
+        </div>
 
-            <div class="product">
-                <img src="images/tower_crane.jpg" alt="Lyftkran">
-                <h3>Lyftkran</h3>
-                <p>Max lyft: <strong>20 ton</strong> | Höjd: <strong>50 m</strong></p>
-                <p class="price">Pris: <strong>250 000 kr</strong> (exkl. moms)</p>
-                <p class="price">Pris: <strong>312 500 kr</strong> (inkl. moms)</p>
-            </div>
+        <div class="product">
+            <img src="images/tower_crane.jpg" alt="Lyftkran">
+            <h3>Lyftkran</h3>
+            <p>Max lyft: <strong>20 ton</strong> | Höjd: <strong>50 m</strong></p>
+            <label>
+                <input type="checkbox" class="produkt-check" data-pris="312500">
+                Välj denna produkt (312 500 kr inkl. moms)
+            </label>
+        </div>
 
             <div class="product">
                 <img src="images/semi_truck_resized.jpg" alt="Lastbil">
                 <h3>Lastbil</h3>
                 <p>Effekt: <strong>400 hk</strong> | Lastkapacitet: <strong>10 ton</strong></p>
-                <p class="price">Pris: <strong>500 000 kr</strong> (exkl. moms)</p>
-                <p class="price">Pris: <strong>625 000 kr</strong> (inkl. moms)</p>
+                <label>
+                    <input type="checkbox" class="produkt-check" data-pris="625000">
+                    Välj denna produkt (625 000 kr inkl. moms)
+                </label>
             </div>
-        </div>
+            <h3>Totalpris:</h3>
+<p id="totalpris">0 kr</p>
+
+        
     </main>
 
-    <aside>
-        <h3>Finansiering</h3>
-        <p>Vi erbjuder flexibla betalningslösningar.</p>
-    </aside>
+   
 
-    <footer>
-        <p>© 2024 Skrot och Korn AB. Alla rättigheter förbehållna.</p>
-    </footer>
+    
 </div>
+<footer>
+    <p>© 2024 Skrot och Korn AB. Alla rättigheter förbehållna.</p>
+</footer>
+</div>
+
+<script src="scripts/meny.js"></script>
+<script src="scripts/priskalkylator.js"></script>
 
 </body>
 </html>

@@ -95,20 +95,6 @@ main img {
     margin: 10px;
     border-radius: 5px;
 }
-
-/* === ASIDE === */
-aside {
-    grid-area: aside;
-    background: #eee;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-aside img {
-    width: 100%;
-    border-radius: 5px;
-}
-
 /* === FOOTER === */
 footer {
     grid-area: footer;
@@ -116,7 +102,23 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    
 }
+
+/* === ASIDE === 
+aside {
+    grid-area: aside;
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
+}*/
+
+aside img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
 
 /* === PRODUKTSIDA (GRID ISTÄLLET FÖR TABELL) === */
 .product-grid {
@@ -213,9 +215,12 @@ button {
 }
 
 .product img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 75px; /* Begränsar bredden */
     height: auto;
     border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 /* === PRISFÄRG & TEXT === */
@@ -223,4 +228,10 @@ button {
     font-size: 1.1em;
     color: #6c4f3d;
     font-weight: bold;
+}
+#totalpris {
+    font-size: 1.5em;
+    color: #6c4f3d;
+    font-weight: bold;
+    margin-top: 15px;
 }
